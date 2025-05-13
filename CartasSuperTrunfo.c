@@ -4,7 +4,10 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//Teste larissa (?)
+// Por algum motivo desde que criei o repositório têm este comentário acima, não compreendi muito bem ^
+// Criei o Código no APP Desktop do VSCode e só estou dando Update no repositório.
+
 
 int main() {
                                             //Variáveis para a Carta Número Um
