@@ -24,7 +24,6 @@ int main() {
     
 
 
-
                                             //Input de Dados do Usuário para a carta número 1
     printf("\n Primeira Carta: \n");
     printf("Digite o Nome de Sua Cidade: \n");
@@ -46,6 +45,7 @@ int main() {
     scanf("%d", &ptturis0);
     
     
+
                                                 //Input de Dados do Usuário para a carta número 2
 
     printf("\n Segunda Carta: \n");
@@ -67,6 +67,14 @@ int main() {
     printf("Quantos Pontos Turísticos sua Cidade tem? \n");
     scanf("%d", &ptturis1);
 
+ 
+
+                                            //Cálculo do PIB per Capita e Densidade Populacional
+
+    float densipop0 = pop0 / area0;
+    float pbcap0 = pib0 / pop0;
+    float densipop1 = pop1 / area1;
+    float pbcap1 = pib1 / pop1;
 
 
                                             //Exibição dos Dados inputados
@@ -76,6 +84,8 @@ int main() {
     printf("Estado: %s\n", estado0);
     printf("Área: %.2f\n", area0);
     printf("PIB: R$ %.2f Bi\n", pib0);
+    printf("PIB per Capita: R$ %.2f\n", pbcap0);
+    printf("Densidade Populacional: %.2f Hab/Km²\n", densipop0);
     printf("População: %d Habitantes\n", pop0);
     printf("N° de Pontos Turísticos: %d\n", ptturis0);
 
@@ -84,6 +94,8 @@ int main() {
     printf("Estado: %s\n", estado1);
     printf("Área: %.2f KM²\n", area1);
     printf("PIB: R$ %.2f Bi\n", pib1);
+    printf("PIB per Capita: R$ %.2f\n", pbcap1);
+    printf("Densidade Populacional: %.2f Hab/Km²\n", densipop1);
     printf("População: %d Habitantes\n", pop1);
     printf("N° de Pontos Turísticos: %d\n", ptturis1);
 
