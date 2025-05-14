@@ -118,26 +118,37 @@ int main() {
 
 
     printf("\n Resultado do Jogo: \n");
+    printf("\nPopulação: \n");
     if (pop1 > pop0) printf("A cidade de %s venceu!\n", cidade1);
     else if (pop1 < pop0) printf("A cidade de %s venceu!\n", cidade0);
     else if (pop1 == pop0) printf("As duas Cartas Empataram!\n", cidade0, cidade1);
     
+    printf("\nPIB: \n");
     if (pib1 > pib0) printf("A cidade de %s venceu!\n", cidade1);
     else if (pib1 < pib0) printf("A cidade de %s venceu!\n", cidade0);
+    else if (pib1 == pib0) printf("As duas Cartas Empataram!\n");
     
+    printf("\nÁrea: \n");
     if (area1 > area0) printf("A cidade de %s venceu!\n", cidade1);
     else if (area1 < area0) printf("A cidade de %s venceu!\n", cidade0);
     
+    printf("\nDensidade Populacional: \n");
     if (densipop1 > densipop0) printf("A cidade de %s venceu!\n", cidade0);
     else if (densipop1 < densipop0) printf("A cidade de %s venceu!\n", cidade1);
     
+    printf("\nPIB per Capita: \n");
     if (pbcap1 > pbcap0) printf("A cidade de %s venceu1\n", cidade1);
     else if (pbcap1 < pbcap0) printf("A cidade de %s venceu!\n", cidade0);
 
+    printf("\nPonto turístico: \n");
     if (ptturis1 > ptturis0) printf("A cidade de %s venceu!\n", cidade1);
     else if (ptturis1 < ptturis0) printf("A cidade de %s venceu!\n", cidade0);
     else if (ptturis1 == ptturis0) printf("As duas Cartas Empataram!\n", cidade0, cidade1);
     
+    printf("\nSuper Poder: \n");
+    if(superpoder0 > superpoder1) printf("A cidade de %s venceu!\n", cidade0);
+    else if(superpoder0 < superpoder1) printf("A cidade de %s venceu!\n", cidade1);
+    else if(superpoder0 == superpoder1) printf("As duas Cartas Empataram!\n", cidade0, cidade1);
 
     
     return 0;
