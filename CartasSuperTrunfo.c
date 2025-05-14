@@ -27,7 +27,7 @@ int main() {
                                             //Input de Dados do Usuário para a carta número 1
     printf("\n Primeira Carta: \n");
     printf("Digite o Nome de Sua Cidade: \n");
-    scanf("%s", &cidade0);
+    scanf("%s", cidade0);
 
     printf("Digite a Sigla de Seu Estado: \n");
     scanf("%s", &estado0);
@@ -48,9 +48,12 @@ int main() {
 
                                                 //Input de Dados do Usuário para a carta número 2
 
+
+
+
     printf("\n Segunda Carta: \n");
     printf("Digite o Nome de Sua Cidade: \n");
-    scanf("%s", &cidade1);
+    scanf("%s", cidade1);
 
     printf("Digite a Sigla de Seu Estado: \n");
     scanf("%s", &estado1);
@@ -69,16 +72,23 @@ int main() {
 
  
 
-                                            //Cálculo do PIB per Capita e Densidade Populacional
+                                            //Cálculo do PIB per Capita e Densidade Populacional de ambas as cartas
 
     float densipop0 = pop0 / area0;
     float pbcap0 = pib0 / pop0;
     float densipop1 = pop1 / area1;
     float pbcap1 = pib1 / pop1;
 
+                                            //Cálcuco do Super-Poder
+
+    float superpoder0 = (pop0 + pbcap0 + ptturis0 + pib0 + area0 + ptturis0); 
+    float superpoder1 = (pop1 + pbcap1 + ptturis1 + pib1 + area1 + ptturis1); 
+
 
                                             //Exibição dos Dados inputados
+                  
                                             
+
     printf("\n Primeira Carta: \n");
     printf("Nome da Cidade: %s\n", cidade0);
     printf("Estado: %s\n", estado0);
@@ -100,7 +110,37 @@ int main() {
     printf("N° de Pontos Turísticos: %d\n", ptturis1);
 
 
-                                            
 
+
+                                            //Exibição do Resultado do Jogo
+
+
+
+
+    printf("\n Resultado do Jogo: \n");
+    if (pop1 > pop0) printf("A cidade de %s venceu!\n", cidade1);
+    else if (pop1 < pop0) printf("A cidade de %s venceu!\n", cidade0);
+    else if (pop1 == pop0) printf("As duas Cartas Empataram!\n", cidade0, cidade1);
+    
+    if (pib1 > pib0) printf("A cidade de %s venceu!\n", cidade1);
+    else if (pib1 < pib0) printf("A cidade de %s venceu!\n", cidade0);
+    
+    if (area1 > area0) printf("A cidade de %s venceu!\n", cidade1);
+    else if (area1 < area0) printf("A cidade de %s venceu!\n", cidade0);
+    
+    if (densipop1 > densipop0) printf("A cidade de %s venceu!\n", cidade0);
+    else if (densipop1 < densipop0) printf("A cidade de %s venceu!\n", cidade1);
+    
+    if (pbcap1 > pbcap0) printf("A cidade de %s venceu1\n", cidade1);
+    else if (pbcap1 < pbcap0) printf("A cidade de %s venceu!\n", cidade0);
+
+    if (ptturis1 > ptturis0) printf("A cidade de %s venceu!\n", cidade1);
+    else if (ptturis1 < ptturis0) printf("A cidade de %s venceu!\n", cidade0);
+    else if (ptturis1 == ptturis0) printf("As duas Cartas Empataram!\n", cidade0, cidade1);
+    
+
+    
     return 0;
+
+
 }
